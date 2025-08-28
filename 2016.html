@@ -18,7 +18,7 @@
 
 	<style>
 /* Kun typografi – ingen bredder, ingen layout-ændringer */
-.typo-adv{
+. {
   --fg:#111;
   --muted:#6b7280;    /* grå til metadata/captions */
   --brand:#0b3b6f;    /* link-farve */
@@ -27,28 +27,29 @@
 }
 
 /* Links */
-.typo-adv a{ color:var(--brand); text-decoration:none }
-.typo-adv a:hover,.typo-adv a:focus{ text-decoration:underline }
+.a{ color:var(--brand); text-decoration:none }
+.a:hover,.a:focus{ text-decoration:underline }
 
 /* Overskrifter (markant H1, diskrete H2/H3) */
-.typo-adv h1{
+.h1{
   margin:.1rem 0 .35rem;
   line-height:1.2;
   font-weight:750;
   font-size:clamp(1.9rem,3.2vw,2.4rem); /* ca. 30–38px */
 }
-.typo-adv h2{ margin:1.5rem 0 .5rem; font-size:1.125rem; font-weight:700 }
-.typo-adv h3{ margin:1.25rem 0 .4rem; font-size:1.05rem;  font-weight:700 }
+		
+.h2{ margin:1.5rem 0 .5rem; font-size:1.125rem; font-weight:700 }
+.h3{ margin:1.25rem 0 .4rem; font-size:1.05rem;  font-weight:700 }
 
 /* Meta-linje (dato m.m.) */
-.typo-adv .meta{
+.meta{
   color:var(--muted);
   font-size:.9375rem;
   margin:0 0 1rem;
 }
 
 /* Standfirst (lede) – kort og lidt større */
-.typo-adv .standfirst{
+.standfirst{
   font-size:1.125rem;
   line-height:1.65;
   font-weight:600;
@@ -56,36 +57,31 @@
 }
 
 /* Brødtekst og lister */
-.typo-adv p{ margin:0 0 1rem }
-.typo-adv ul,.typo-adv ol{ padding-left:1.25rem; margin:0 0 1rem }
-.typo-adv li{ margin:.25rem 0 }
+.p{ margin:0 0 1rem }
+.ul,.ol{ padding-left:1.25rem; margin:0 0 1rem }
+.li{ margin:.25rem 0 }
 
 /* Citater (pull-quote/blockquote) */
-.typo-adv blockquote{
+.blockquote{
   margin:1.25rem 0; padding:1rem 1.25rem;
   border-left:4px solid var(--brand);
   background:#f8fafc;
   font-size:1.125rem; font-weight:600;
 }
-.typo-adv blockquote cite{
+.blockquote cite{
   display:block; margin-top:.5rem; font-weight:500; font-size:.95rem; color:var(--muted)
 }
 
 /* Figcaption og småtekster */
-.typo-adv figcaption, .typo-adv small{ color:var(--muted); font-size:.9rem }
+.figcaption, .typo-adv small{ color:var(--muted); font-size:.9rem }
 
-/* Kode/forudformateret tekst */
-.typo-adv code{
-  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-  font-size:.95em;
-}
-.typo-adv pre{
+.pre{
   overflow:auto; padding:.75rem 1rem; background:#f6f7f9; border-radius:6px;
 }
 
 /* Tabeller – kun typografisk stil */
-.typo-adv table{ border-collapse:collapse; margin:0 0 1rem }
-.typo-adv th,.typo-adv td{ border-bottom:1px solid #e5e7eb; padding:.5rem .4rem; text-align:left }
+.table{ border-collapse:collapse; margin:0 0 1rem }
+.th,.td{ border-bottom:1px solid #e5e7eb; padding:.5rem .4rem; text-align:left }
 </style>
 
 	<!--style>
